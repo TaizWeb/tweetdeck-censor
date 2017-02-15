@@ -1,13 +1,20 @@
 function loadOptions() {
-	if (typeof document.getElementById('blocked-words').value == "string") document.getElementById('blocked-words').value = localStorage.blockedWords;
+	if (typeof document.getElementById('blocked-words').value == "string") {
+		chrome.storage.sync.get(["blockedWords"], function(items) {
+			document.getElementById('blocked-words').value = items.blockedWords;
+		});
+	}
 }
 
 function saveOptions() {
-	localStorage.blockedWords = document.getElementById('blocked-words').value;
+	chrome.storage.sync.set({"blockedWords": document.getElementById('blocked-words').value}, function() {
+	});
 }
 
 function restoreDefaults() {
-	localStorage.blockedWords = "";
+	chrome.storage.sync.set({"blockedWords": ""}, function() {
+		// Do something
+	});
 	document.getElementById('blocked-words').value = "";
 }
 
