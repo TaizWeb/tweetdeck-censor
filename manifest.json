@@ -1,6 +1,5 @@
 {
 	"manifest_version": 2,
-
 	"name": "Tweetdeck Mute",
 	"description": "This extension shows a Google Image search result for the current page",
 	"version": "1.0",
@@ -20,5 +19,6 @@
 			"js": ["content.js"],
 			"run_at": "document_end"
 		}
-	]
+	],
+	"options_page": "options.html"
 }
