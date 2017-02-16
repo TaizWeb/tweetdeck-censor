@@ -1,4 +1,3 @@
-// new name: perhaps tweetdeck filter?
 chrome.storage.sync.get(["blockedWords"], function(items) {
 	var blockedWords = items.blockedWords.split(",");
 	function filter() {
