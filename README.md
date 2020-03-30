@@ -5,7 +5,7 @@ This is a Google Chrome extension for filtering any tweets containing a certain 
 **Note**: In order to use this extension you must have Chrome Developer Mode enabled.
 
 Instructions:
-1. Download the master zip of the repo [here]('https://github.com/TylerWalker12/tweetdeck-censor/archive/master.zip').
+1. Download the master zip of the repo [here]('https://github.com/TaizWeb/tweetdeck-censor/archive/master.zip').
 
 2. Extract it, noting where the folder is located on your device.
 
